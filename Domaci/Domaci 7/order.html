@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Domaci 7</title>
+    </head>
+    <body>
+        <h1>Software Order Form</h1>
+        <form>
+            <fieldset style="width: 600px;">
+                <legend>License ditails</legend>
+                <ul>
+                    <li>Email adress <input type="email" placeholder="example@gmail.com" required></li>
+                    <li>Website <input type="text" placeholder="http://www.example.com/" required></li>
+                    <li>Number of licenses <input type="text" placeholder="How many to buy 1-10" required></li>
+                </ul>
+            </fieldset>
+            <fieldset style="width: 600px;">
+                <legend>Billing details</legend>
+                <ul>
+                    <li>Name <input type="text" placeholder="First Last" required></li>
+                    <li>Adress <textarea cols="30" rows="3" placeholder="House number, street, city, state" required></textarea></li>
+                    <li>Postal code <input type="text" placeholder="Post code or zip code" required></li>
+                    <li>Country <select style="border-radius: 25px;">
+                        <option selected>Select country</option>
+                        <option>Montenegro</option>
+                        <option>Serbia</option>
+                        <option>BiH</option>
+                        <option>Croatia</option>
+                        <option>Slovenia</option>
+                    </select></li>
+                    <li>Phone(optional) <input type="text" placeholder="Include country prefix, e.g +382"></li>
+                </ul>
+            </fieldset>
+            <fieldset style="width: 600px;">
+                <legend>Payment details</legend>
+                <ul>
+                    <li>Card number <input type="text" placeholder="As shown on the front of your card" required></li>
+                    <li>CCV code <input type="text" placeholder="3-digit number on back of your card" required></li>
+                    <li>Expiry date <input type="text" placeholder="YYYY-MM" required></li>
+                </ul>
+            </fieldset>
+            <button style="border-radius: 25px;">Place Your Order</button>
+        </form>
+    </body>
+</html>
