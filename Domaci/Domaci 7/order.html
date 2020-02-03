@@ -9,17 +9,17 @@
             <fieldset style="width: 600px;">
                 <legend>License ditails</legend>
                 <ul>
-                    <li>Email adress <input type="email" placeholder="example@gmail.com" required></li>
-                    <li>Website <input type="text" placeholder="http://www.example.com/" required></li>
-                    <li>Number of licenses <input type="text" placeholder="How many to buy 1-10" required></li>
+                    <li><label for="email">Email</label> <input id="email" type="email" placeholder="example@gmail.com" required></li>
+                    <li><label for="website">Website</label> <input id="website" type="text" placeholder="http://www.example.com/" required></li>
+                    <li><label for="nol">Number of licenses</label> <input id="nol" type="text" placeholder="How many to buy 1-10" required></li>
                 </ul>
             </fieldset>
             <fieldset style="width: 600px;">
                 <legend>Billing details</legend>
                 <ul>
-                    <li>Name <input type="text" placeholder="First Last" required></li>
-                    <li>Adress <textarea cols="30" rows="3" placeholder="House number, street, city, state" required></textarea></li>
-                    <li>Postal code <input type="text" placeholder="Post code or zip code" required></li>
+                    <li><label for="name">Name</label> <input id="name" type="text" placeholder="First Last" required></li>
+                    <li><label for="adress">Adress</label> <textarea id="adress" cols="30" rows="3" placeholder="House number, street, city, state" required></textarea></li>
+                    <li><label for="postalcode">Postal code</label> <input id="postalcode" type="text" placeholder="Post code or zip code" required></li>
                     <li>Country <select style="border-radius: 25px;">
                         <option selected>Select country</option>
                         <option>Montenegro</option>
@@ -28,15 +28,15 @@
                         <option>Croatia</option>
                         <option>Slovenia</option>
                     </select></li>
-                    <li>Phone(optional) <input type="text" placeholder="Include country prefix, e.g +382"></li>
+                    <li><label for="phone">Phone(optional)</label> <input id="phone" type="text" placeholder="Include country prefix, e.g +382"></li>
                 </ul>
             </fieldset>
             <fieldset style="width: 600px;">
                 <legend>Payment details</legend>
                 <ul>
-                    <li>Card number <input type="text" placeholder="As shown on the front of your card" required></li>
-                    <li>CCV code <input type="text" placeholder="3-digit number on back of your card" required></li>
-                    <li>Expiry date <input type="text" placeholder="YYYY-MM" required></li>
+                    <li><label for="cardnum">Card number</label> <input id="cardnum" type="text" placeholder="As shown on the front of your card" required></li>
+                    <li><label for="ccv">CCV code</label> <input id="ccv" type="text" placeholder="3-digit number on back of your card" required></li>
+                    <li><label for="expda">Expiry date</label> <input id="expda" type="text" placeholder="YYYY-MM" required></li>
                 </ul>
             </fieldset>
             <button style="border-radius: 25px;">Place Your Order</button>
