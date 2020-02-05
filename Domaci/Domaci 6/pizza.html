@@ -4,13 +4,14 @@
         <title>Domaci 6</title>
     </head>
     <body>
+        <form>
         <table border="1">
             <tr>
                 <td colspan="8" align="center"><strong>Pizza Shop 2.0</strong></td>
             </tr>
             <tr>
-                <td colspan="2">Name</td>
-                <td colspan="6"><input type="text" style="width: 200px" maxlength="20" required></td>
+                <td colspan="2"> <label for="name">Name</label></td>
+                <td colspan="6"><input id="name" type="text" style="width: 200px" maxlength="20" required></td>
             </tr>
             <tr>
                 <td colspan="2">Pizza Topping</td>
@@ -39,11 +40,11 @@
                 </td>
             </tr>
             <tr>
-                <td colspan="8">Delivery Instructions:</td>
+                <td colspan="8"><label for="instructions">Delivery Instructions:</label></td>
             </tr>
             <tr>
                     <td colspan="8">
-                        <textarea name="instructions" cols="60" rows="5" maxlength="100" required></textarea>
+                        <textarea id="instructions" name="instructions" cols="60" rows="5" maxlength="100" required></textarea>
                     </td>
             </tr>
             <tr>
@@ -52,5 +53,6 @@
                 </td>
             </tr>
         </table>
+        </form>
     </body>
 </html>
