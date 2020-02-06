@@ -2,29 +2,50 @@
 <html>
     <head>
         <title>Domaci 8 vj3</title>
+        <style>
+            .nav {
+                color: cadetblue;
+                margin-left: 220px;
+                font-size: 30px;
+            }
+            .nav:hover {
+                color: chartreuse;
+            }
+            .linkovi {
+                color: cadetblue;
+                font-size: 20px
+            }
+            .linkovi:hover {
+                color: chartreuse;
+            }
+            input {
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+        </style>
     </head>
-    <body>
+    <body style="background-color: hsl(0, 21%, 88%);">
         <nav>
-            <a href="#task_1">Zadatak 1</a><br>
-            <a href="#task_2">Zadatak 2</a><br>
-            <a href="#task_3">Zadatak 3</a><br>
+            <a href="#task_1" class="nav">Zadatak 1</a>
+            <a href="#task_2" class="nav">Zadatak 2</a>
+            <a href="#task_3" class="nav">Zadatak 3</a><br>
         </nav>
         <hr>
-        <div id="task_1">
-            <h1>CV</h1>
-            <h2>Licni podaci</h2>
+        <div id="task_1" style="background-color: darkgrey; width: 420px; box-shadow: 10px 10px 40px 10px cadetblue;">
+            <h1 style="text-align: center; font-size: 40px; background-color: cadetblue;">CV</h1>
+            <h2 style="background-color: chartreuse; width: 130px">Licni podaci</h2>
             <img src="../Domaci 5/image/myAvatar.png" alt="My Avatar" style="width: 200px; height: 200px;">
             <p>Zovem se <strong>Emir Hadzajlic</strong> i imam <strong>18</strong> godina. <br>
                 Zivim u <strong>Bijelom Polju</strong> a idem u <strong>SS "Slobodan Skerovic"</strong> u Podgorici.<br>
-                Zapratite me na <a href="https://www.instagram.com/emirhadzajlic/" target="_blank">Instagramu</a>.
+                Zapratite me na <a href="https://www.instagram.com/emirhadzajlic/" target="_blank" class="linkovi">Instagramu</a>.
             </p>
-            <h2>Lista programskih jezika koje poznajem</h2>
+            <h2 style="background-color: chartreuse; width: 420px">Lista programskih jezika koje poznajem</h2>
             <ol>
                 <li>C++</li>
                 <li>Java</li>
                 <li>JavaScript</li>
             </ol>
-            <h2>Osobine</h2>
+            <h2 style="background-color: chartreuse; width: 90px">Osobine</h2>
             <ul>
                 <li>Odgovoran</li>
                 <li>Uporan</li>
@@ -33,14 +54,14 @@
         </div>
         <hr>
         <div id="task_2">
-            <table border="1" style="border-collapse: collapse;">
+            <table border="1" style="border-collapse: collapse; background-color: darkgray;">
                 <caption style="font-size: 40px; background-color: cadetblue;">Omiljeni filmovi</caption>
-                    <th style="font-size: 20px;">Ime filma</th>
-                    <th style="font-size: 20px;">Kratak opis</th>
-                    <th style="font-size: 20px;">Zanr</th>
-                    <th style="font-size: 20px;">Datum izlaska</th>
-                    <th style="font-size: 20px;">Cover slika</td>
-                    <th style="font-size: 20px;">Link</th>
+                    <th style="font-size: 20px; background-color: chartreuse;">Ime filma</th>
+                    <th style="font-size: 20px; background-color: chartreuse;">Kratak opis</th>
+                    <th style="font-size: 20px; background-color: chartreuse;">Zanr</th>
+                    <th style="font-size: 20px; background-color: chartreuse;">Datum izlaska</th>
+                    <th style="font-size: 20px; background-color: chartreuse;">Cover slika</td>
+                    <th style="font-size: 20px; background-color: chartreuse;">Link</th>
                     <tr>
                         <td style="font-style: italic;">Godfather Part II</td>
                         <td>Kopola nas u priču uvodi pedesetih godina <br>
@@ -51,7 +72,7 @@
                         <td>Kriminal, Drama</td>
                         <td>20. Decembar 1974.</td>
                         <td><img src="image/gf2.jpg" alt="Kum II Cover" width="80px" height="100px"></td>
-                        <td><a href="https://www.imdb.com/title/tt0071562/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=ZNWGGNJNXR2N2J4K8P6W&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_3" target="_blank">IMDb</a></td>
+                        <td><a href="https://www.imdb.com/title/tt0071562/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=ZNWGGNJNXR2N2J4K8P6W&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_3" target="_blank" class="linkovi">IMDb</a></td>
                     </tr>
                     <tr>
                         <td style="font-style: italic;">Fast 5</td>
@@ -63,7 +84,7 @@
                         <td>29.April 2011.</td>
                         <td><img src="image/f5.jpg" alt="Fast 5 cover" width="80px" height="100px"></td>
                         
-                        <td><a href="https://www.imdb.com/title/tt1596343/?ref_=nv_sr_1" target="_blank">IMDb</a></td>
+                        <td><a href="https://www.imdb.com/title/tt1596343/?ref_=nv_sr_1" target="_blank" class="linkovi">IMDb</a></td>
                     </tr>
                     <tr>
                             <td style="font-style: italic;">The Lord of the Rings: The Return of the King</td>
@@ -75,7 +96,7 @@
                             <td>Akcija, Avantura</td>
                             <td>26. Decembar 2003.</td>
                             <td><img src="image/lor.jpg" alt="Gospodar prstenova" width="80px" height="100px"/></td>
-                            <td><a href="https://www.imdb.com/title/tt0167260/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=ZNWGGNJNXR2N2J4K8P6W&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_7" target="_blank">IMDb</a></td>
+                            <td><a href="https://www.imdb.com/title/tt0167260/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=ZNWGGNJNXR2N2J4K8P6W&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_7" target="_blank" class="linkovi">IMDb</a></td>
                     </tr>
                     <tr>
                             <td style="font-style: italic;">The Shawshank Redemption</td>
@@ -89,7 +110,7 @@
                             <td>Drama</td>
                             <td>14. Oktobar 1994.</td>
                             <td><img src="image/sr.jpg" alt="Bjekstvo iz Sosenka" width="80px" height="100px"></td>
-                            <td><a href="https://www.imdb.com/title/tt0111161/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=ZNWGGNJNXR2N2J4K8P6W&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_1" target="_blank">IMDb</td>
+                            <td><a href="https://www.imdb.com/title/tt0111161/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=ZNWGGNJNXR2N2J4K8P6W&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_1" target="_blank" class="linkovi">IMDb</td>
                     </tr>
                     <tr>
                             <td style="font-style: italic;">The Matrix</td>
@@ -101,14 +122,14 @@
                             <td>Akcija, Naucna-fantastika</td>
                             <td>31. Mart 1999.</td>
                             <td><img src="image/matrix.jpg" alt="Matriks" width="80px" height="100px"/></td>
-                            <td><a href="https://www.imdb.com/title/tt0133093/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=ZNWGGNJNXR2N2J4K8P6W&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_18" target="_blank">IMDb</a></td>
+                            <td><a href="https://www.imdb.com/title/tt0133093/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=ZNWGGNJNXR2N2J4K8P6W&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_18" target="_blank" class="linkovi">IMDb</a></td>
                     </tr>
             </table>
         </div>
         <hr>
-        <div id="task_3">
-            <h2>Job Application With Resume Upload</h2>
-            <h3>Contact Information</h3>
+        <div id="task_3" style="background-color: darkgrey; width: 390px; box-shadow: 10px 10px 40px 10px cadetblue;">
+            <h2 style="background-color: cadetblue; width: 390px;">Job Application With Resume Upload</h2>
+            <h3 style="background-color: chartreuse; width: 170px;">Contact Information</h3>
             <form action="index.html" method="GET">
                 <div style="display: flex">
                     <div style="margin-left : 0; margin-right : 1%; width : 25;">First name *<br>
@@ -122,11 +143,10 @@
                 <input type="email" size="47" required><br>
                 Phone * <br>
                 <input type="tel" size="47" required>
-                <h3>Position</h3>
+                <h3 style="background-color: chartreuse; width: 70px;">Position</h3>
                 Position you are applying for * <br>
                 <select>
-                    <option selected>No file selected</option>
-                    <option>Backend NodeJS</option>
+                    <option selected>Backend NodeJS</option>
                     <option>Backend Python</option>
                     <option>Frontend React</option>
                     <option>Frontend Angular</option>
