@@ -1,0 +1,44 @@
+body{
+    background: #eee;
+}
+h1{
+    color: red;
+}
+h1~span{
+    color: red;
+}
+/*li[title]{
+    color: blue;
+}
+li[title$="1"]{
+    color: cyan;
+}
+ li:nth-child(1), li:last-child{
+    font-size: 40px;
+}
+li:nth-child(odd){
+    color: red;
+} 
+li:nth-of-type(3n-1){
+    color: blue;
+}*/
+li:first-of-type,li:nth-last-of-type(2){
+    color: red !important;
+}
+p::first-letter{
+    font-size: 30px;
+}
+p::before{
+    content: "";
+    display: block;
+    width: 40px;
+    height: 5px;
+    background-color: red;
+}
+p::after{
+    content: "";
+    display: block;
+    width: 40px;
+    height: 5px;
+    background-color: red;
+}
