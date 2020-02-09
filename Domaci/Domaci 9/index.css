@@ -1,0 +1,93 @@
+.klasa1{
+    width: 500px;
+    height: 300px;
+    border-top-style:  dotted;
+    border-top-color: yellow;
+    border-top-width: 5px;
+    border-right-style: solid;
+    border-right-width: 15px;
+    border-right-color: green;
+    border-bottom-style: double;
+    border-bottom-color: blue;
+    border-bottom-width: 5px;
+    border-left-style: dashed;
+    border-left-color: red;
+    border-left-width: 7px;
+
+    box-shadow: 10px 10px 10px 10px rgb(44, 42, 42);
+}
+.prviNaslov{
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 20px 10px 10px black;
+}
+.klasa2{
+    width: 450px;
+    height: 120px;
+    margin: auto;
+    text-align: center;
+    border-radius: 100px;
+    border-style: solid;
+    border-width: 10px;
+    border-color: green;
+}
+.drugiNaslov{
+    font-size: 18px;
+    text-shadow: 5px 5px 10px black;
+}
+.forma{
+    margin-left: -200px;
+
+}
+input{
+    background-color: chocolate;
+    border-color: chocolate;
+}
+.klasa3{
+    background-color: rgb(0, 0, 0);
+    opacity: 40%;
+    width: 150px;
+    height: 85px;
+    border-style: dashed;
+    border-color: white;
+    border-width: 4px;
+    border-radius: 100px;
+    text-align: center;
+    font-size: 25px;
+    position: relative;
+    left: 450px;
+    top: -290px;
+}
+.cool{
+    font-weight: 600;
+    color: white;
+    z-index: 1;
+    opacity: 100%;
+    margin-top: 15px;
+}
+.klasa4{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    opacity: 40%; 
+    border-style: dashed;
+    border-color: white;
+    border-width: 4px;
+    position: relative;
+    left: 400px;
+    top: -300px;
+}
+.klasa5{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    opacity: 40%; 
+    border-style: dashed;
+    border-color: white;
+    border-width: 4px;
+    position: relative;
+    left: 360px;
+    top: -320px;
+}
