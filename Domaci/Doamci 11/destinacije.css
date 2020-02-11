@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: #140a0a12;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+img{
+    margin: auto;
+    margin-bottom: 10px;
+    width: 250px;
+    height: 200px;
+}
+img:hover{
+    visibility: visible;
+    opacity: 30%;
+}
+.naslov{
+    text-align: center;
+}
+h1{
+    font-size: 40px;
+    line-height: 10px;
+    text-transform: uppercase;
+    font-family: 'Lacquer', sans-serif;
+}
