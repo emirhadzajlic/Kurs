@@ -4,19 +4,14 @@
 body{
     background: #140a0a12;
 }
-.container{
+.galerija{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 img{
-    margin: auto;
-    margin-bottom: 10px;
     width: 250px;
     height: 200px;
-}
-img:hover{
-    visibility: visible;
-    opacity: 30%;
 }
 .naslov{
     text-align: center;
@@ -27,3 +22,30 @@ h1{
     text-transform: uppercase;
     font-family: 'Lacquer', sans-serif;
 }
+.pictureContainer {
+    position: relative;
+    height: 216px;
+    width: 250px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  
+  .text {
+    text-align: center;
+    padding: 90px;
+    position: absolute;
+    top: -16px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(252, 252, 252, 0.6);
+    color: black;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  
+  .pictureContainer:hover .text {
+    visibility: visible;
+    opacity: 1;
+  }
