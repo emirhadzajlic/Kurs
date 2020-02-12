@@ -28,8 +28,12 @@
     text-align: center;
     border-radius: 100px;
     border-style: solid;
-    border-width: 10px;
-    border-color: green;
+    border-width: 4px;
+    border-color: red;
+    box-shadow: 
+        0 0 0 4px yellow,
+	    0 0 0 8px green,
+	    0 0 0 12px blue;
 }
 .drugiNaslov{
     font-size: 18px;
