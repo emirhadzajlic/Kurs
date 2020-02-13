@@ -31,6 +31,7 @@ h1{
   }
   
   .text {
+    font-family: 'Lacquer', sans-serif;
     text-align: center;
     padding: 90px;
     position: absolute;
