@@ -9,46 +9,39 @@
 body{
     background-color: black;
 }
+header{
+    width: 100%;    
+}
 .all{
     background: white;
     width: 900px;
-    margin: 0 auto;
+    margin: auto;
 }
-.navpic{
+.headerpic{
     width: 100%;
     height: 200px;
 }
 nav ul{
-    background-color: gray;
-}
-nav{
-    margin-top: -4px;
-}
-nav ul li{
-    display: inline;
-    line-height: 37px;
-}
-nav ul li a{
-    color: white;
-    font-size: 17px;
-    text-transform: uppercase;
-    padding: 9px;
-}
-a:hover{
-    background-color: white;
-    color: grey;
-    transition: .5s;
-}
-.main{
+    background: gray;
     display: flex;
-    justify-content: center;
 }
-.bigblocks, .smallblocks{
+ul li{
+    border-right: solid 1px white;
+}
+li a{
     display: block;
+    color: white;
+    padding: 10px 15px;
+}
+
+li a:hover{ 
+    color: gray;
+    background-color: white;
+    transition: 0.5s;
 }
 .blok1{
     width: 550px;
-    height: 160px;
+    height: 180px;
     margin: 10px;
     border: 1px solid gray;
     border-radius: 10px;
@@ -72,7 +65,7 @@ a:hover{
 }
 .blok4{
     width: 200px;
-    height: 350px;
+    height: 370px;
     margin: 10px;
     border: 1px solid gray;
     border-radius: 10px;
@@ -81,75 +74,95 @@ a:hover{
 .blok1:hover,.blok2:hover,.blok3:hover,.blok4:hover{
     background: rgb(240, 235, 235);
 }
+.main{
+    display: flex;
+    justify-content: center;
+}
+.bigblocks{
+    display: flex;
+    flex-direction: column;
+}
+.smallblocks{
+    display: flex;
+    flex-direction: column;
+}
 footer{
-    padding: 40px;
-    width: 900px;
-    height: 90px;
+    width: 100%;
+    height: 70px;
     background: rgb(179, 81, 16);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-footer p{
-    text-align: center;
+footer p a{
+    color: black;
+    text-decoration: underline;
 }
-.naslov{
+
+h3{
     color: rgb(179, 81, 16);
-    font-size: 20px;
     margin: 10px;
 }
-@media(max-width: 916px){
+
+.blok1 p, .blok4 p{
+    margin: 20px;   
+}
+.slika1, .slika2{
+    width: 30%;
+    height: 20vh;
+}
+.blok2_1, .blok2_2{
+    display: flex;
+    margin: 20px;
+}
+.blok2_1 div, .blok2_2 div{
+    margin: 10px;
+}
+.blok3 p{
+    margin: 10px;
+}
+.blok3 p a, .blok4 p a{
+    color: rgb(179, 81, 16);
+    text-decoration: underline;
+}
+
+/* Stavio sam 916px jer se na 900px u jednom trenutnku pojavljuje horizontalni skrol */
+@media (max-width: 916px){
     nav ul{
-        display: block;
-        width: 100px;
-        height: 100%; 
-        position: fixed;
-        top: 0px;
-        z-index: 1;
+        flex-direction: column;
+        text-align: center;
     }
-    nav ul li a{    
-        display: flex;
-        position: relative;
-        top: 30px;
-        line-height: 50px;
-    }
-    .main{  
-        margin: auto;
-        display: block;
+    ul li{
+        border-bottom: solid 1px white;
     }
     .all{
         width: 100%;
     }
-    footer{
-        width: 100%;
-    }
-    .blok3{
-        width: 550px;
-        height: 100px;
-    }
-    .blok4{
-        width: 550px;
-        height: 150px;
-    }
-    .blok1, .blok2, .blok3, .blok4{
-        margin: auto;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        position: relative;
-        left: 50px;
-    }
-    footer p{
-        position: relative;
-        left: 40px;
-    }   
-}
-@media (max-width:680px){
-    .blok1,.blok2,.blok3,.blok4{
-        position: relative;
-        left: 50px;
-        width: 300px;
+    .main{
+        flex-direction: column;
+        justify-content: center;
     }
     .blok1{
-        height: 300px;
+        width: 95%;
+        height: auto;
     }
     .blok2{
-        height: 450px;
+        width: 95%;
+        height: auto;
+    }
+    .blok3{
+        width: 95%;
+        height: auto;
+    }
+    .blok4{
+        width: 95%;
+        height: auto;
+    }
+    .blok3 p{
+        width: 160px;
+    }
+    .helpnews{
+        display: flex;
+        justify-content: center;
     }
 }
